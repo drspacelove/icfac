@@ -1,0 +1,18 @@
+{
+  "international": [
+    {"name": "Prof. Hideyuki Nakanishi", "institution": "Kyoto Institute of Technology", "location": "Kyoto, Japan"},
+    {"name": "Dr. Christophe LEN", "institution": "Chimie ParisTech, PSL Research University", "location": "France"},
+    {"name": "Prof. S.B. Tsogoeva", "institution": "University of Erlangen", "location": "Germany"},
+    {"name": "Prof. Surendra Prasad", "institution": "The University of The South Pacific", "location": "Fiji"},
+    {"name": "Prof. W. A. L. Van Otterloo", "institution": "Stelenbosch University", "location": "Cape Town, South Africa"},
+    {"name": "Prof. J. R. Turner", "institution": "Washington University in St. Louis", "location": "USA"},
+    {"name": "Dr. Abhilasha Singh", "institution": "Massachusetts General Health, University of Harward", "location": "USA"},
+    {"name": "Prof. Mahesh K. Lakshman", "institution": "The City College of New York", "location": "USA"},
+    {"name": "Prof. Kirpal S. Bist", "institution": "University of South Florida", "location": "USA"},
+    {"name": "Prof. Amitabh Jha", "institution": "Acadia University", "location": "Canada"},
+    {"name": "Prof. Rakesh Kumar", "institution": "—", "location": "Canada"},
+    {"name": "Prof. Kaushik Mallick", "institution": "University of Johannesburg", "location": "South Africa"},
+    {"name": "Prof. S. Mignani", "institution": "University of Madeira", "location": "Portugal"},
+    {"name": "Prof. Pratim Biswas", "institution": "University of Miami", "location": "Florida, USA"}
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {
+      "label": "Foreign Delegates",
+      "value": "USD 100.00"
+    },
+    {
+      "label": "Faculty",
+      "value": "Rs. 3000.00"
+    },
+    {
+      "label": "Research Scholars",
+      "value": "Rs. 2000.00"
+    },
+    {
+      "label": "Students",
+      "value": "Rs. 1000.00"
+    },
+    {
+      "label": "Industrial Persons",
+      "value": "Rs. 4000.00"
+    },
+    {
+      "label": "Spot Registration",
+      "value": "Standard fee plus an additional Rs. 500.00"
+    }
+  ]
+}

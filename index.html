@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="ICFAC 2026 - 3rd International Conference on Frontier Areas of Chemistry at Mahatma Gandhi Central University, Motihari, Bihar, India.">
+  <title>ICFAC 2026 | 3rd International Conference on Frontier Areas of Chemistry</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/gallery_2025/thumb/gallery-11.webp">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+    :root {
+      --color-pink: #254be6;
+      --color-blue: #254be6;
+      --color-dark-purple: #1a3bb8;
+      --color-navy: #0d2a7a;
+      --color-yellow: #5a9fff;
+      --color-yellow-btn: #5a9fff;
+      --color-white: #FFFFFF;
+      --color-black: #000000;
+      --color-light-gray: #FAFAFA;
+      --color-dark-text: #2F2E2E;
+      --color-body-bg: #f5f8ff;
+      --font-heading: 'Alata', sans-serif;
+      --font-body: 'Alata', sans-serif;
+      --font-ui: 'Alata', sans-serif;
+      --max-width: 980px;
+      --header-height: auto;
+      --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 4px 24px rgba(0, 0, 0, 0.12);
+      --radius: 8px;
+      --radius-pill: 50px
+    }
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      scrollbar-width: none
+    }
+
+    html::-webkit-scrollbar {
+      display: none
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-black);
+      background-color: var(--color-body-bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    ul,
+    ol {
+      list-style: none
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: var(--font-heading);
+      line-height: 1.3
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px
+    }
+
+    .site-header {
+      background: var(--color-white);
+      text-align: center;
+      padding: 20px 0 0;
+      margin-bottom: 0
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 20px;
+      max-width: var(--max-width);
+      margin: 0 auto
+    }
+
+    .header-logo {
+      width: 80px;
+      height: auto;
+      object-fit: contain
+    }
+
+    .header-title {
+      text-align: center;
+      flex: 1
+    }
+
+    .header-title h1 {
+      font-size: 28px;
+      color: var(--color-pink);
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      line-height: 1.2
+    }
+
+    .header-title h2 {
+      font-size: 18px;
+      color: var(--color-navy);
+      font-weight: 500;
+      margin-top: 4px
+    }
+
+    .header-title p {
+      font-size: 14px;
+      color: var(--color-dark-text);
+      margin-top: 2px
+    }
+
+    .site-nav {
+      background: var(--color-white);
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: var(--shadow);
+      margin-bottom: 0
+    }
+
+    .nav-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px
+    }
+
+    .nav-list li a {
+      display: inline-block;
+      padding: 8px 20px;
+      font-family: var(--font-ui);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-black);
+      background: var(--color-yellow-btn);
+      border-radius: var(--radius-pill);
+      transition: all 0.3s ease;
+      white-space: nowrap
+    }
+
+    .nav-list li a:hover,
+    .nav-list li a.active {
+      background: var(--color-yellow);
+      transform: translateY(-1px);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2)
+    }
+
+    .page-hero {
+      position: relative;
+      background: transparent;
+      padding: 80px 20px;
+      text-align: center;
+      overflow: hidden;
+      margin-top: 0;
+      min-height: 400px
+    }
+
+    .page-hero::before,
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0;
+      z-index: 0;
+      transition: opacity 1.5s ease-in-out
+    }
+
+    .page-hero::before {
+      background-image: var(--hero-bg, url('assets/gallery_2025/org/gallery-11.webp'));
+      z-index: 1
+    }
+
+    .page-hero::after {
+      background-image: var(--hero-bg-next, url('assets/gallery_2025/org/gallery-11.webp'));
+      z-index: 2
+    }
+
+    .page-hero.show-before::before {
+      opacity: 0.8;
+      z-index: 2
+    }
+
+    .page-hero.show-after::after {
+      opacity: 0.8;
+      z-index: 2
+    }
+
+    .page-hero.show-before::after {
+      opacity: 0;
+      z-index: 1
+    }
+
+    .page-hero.show-after::before {
+      opacity: 0;
+      z-index: 1
+    }
+
+    .page-hero .container {
+      position: relative;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 40px 30px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+      max-width: 800px
+    }
+
+    .page-hero h2 {
+      font-size: 36px;
+      color: var(--color-pink);
+      font-weight: 700;
+      margin-bottom: 10px
+    }
+
+    .page-hero p {
+      font-size: 16px;
+      color: var(--color-navy);
+      max-width: 700px;
+      margin: 0 auto
+    }
+  </style>
+  <link rel="preload" href="styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="styles.min.css">
+  </noscript>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-top">
+      <img src="assets/images/logo_university.webp" alt="MGCU Logo" class="header-logo" width="300" height="300">
+      <div class="header-title">
+        <h1>3rd International Conference on Frontier Areas of Chemistry</h1>
+        <h2>ICFAC &ndash; 2026</h2>
+        <p>Department of Chemistry, Mahatma Gandhi Central University</p>
+        <p>Motihari (East Champaran), Bihar, India</p>
+      </div>
+      <img src="assets/images/logo_congress.webp" alt="Congress Logo" class="header-logo" width="300" height="300">
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Main Navigation">
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-list">
+      <li><a href="index.html" class="active">About</a></li>
+      <li><a href="speakers.html">Speakers</a></li>
+      <li><a href="abstract.html">Abstract</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="committee.html">Committee</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="page-hero"></section>
+
+  <!-- About the University -->
+  <section class="content-section">
+    <div class="container">
+      <h3 class="section-subtitle">About the University</h3>
+      <p class="section-text">
+        Mahatma Gandhi Central University (MGCU) was established by an Act of Parliament in 2016 (Central Universities
+        Act, 2009, as amended in 2014) in Motihari, East Champaran, Bihar &mdash; the land where Mahatma Gandhi launched
+        his first Satyagraha movement in 1917. The university is committed to excellence in teaching, research, and
+        rural development, with a special focus on promoting knowledge in the fields of science, technology, and social
+        sciences.
+      </p>
+      <p class="section-text">
+        Situated in the historically significant region of Champaran, the university aspires to be a center of academic
+        brilliance, drawing students and scholars from across India and around the world.
+      </p>
+    </div>
+  </section>
+
+  <!-- About the Department -->
+  <section class="content-section">
+    <div class="container">
+      <h3 class="section-subtitle">About the Department of Chemistry</h3>
+      <p class="section-text">
+        The Department of Chemistry at MGCU offers undergraduate, postgraduate, and doctoral programs covering all major
+        branches of Chemistry &mdash; Organic, Inorganic, Physical, Analytical, and Interdisciplinary Chemistry. The
+        department is home to a vibrant research community working on frontier areas including green chemistry,
+        materials science, computational chemistry, and pharmaceutical chemistry.
+      </p>
+      <p class="section-text">
+        With dedicated faculty, modern laboratory facilities, and a commitment to cutting-edge research, the Department
+        of Chemistry is rapidly growing as a hub for chemical sciences in eastern India.
+      </p>
+    </div>
+  </section>
+
+  <!-- About Champaran -->
+  <section class="content-section">
+    <div class="container">
+      <h3 class="section-subtitle">About Champaran</h3>
+      <p class="section-text">
+        Champaran holds a unique place in India&rsquo;s freedom struggle. It was here in 1917 that Mahatma Gandhi led
+        the famous Champaran Satyagraha &mdash; his first civil disobedience movement in India &mdash; protesting
+        against the oppressive indigo cultivation system imposed by British planters. This historic event marked the
+        beginning of the Gandhian era in Indian politics.
+      </p>
+      <p class="section-text">
+        East Champaran, with its district headquarters at Motihari, is a land of rich cultural heritage, natural beauty,
+        and historical significance. The region continues to inspire scholars, thinkers, and visitors from around the
+        globe.
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="content-section" id="gallery">
+    <div class="container">
+      <h3 class="section-subtitle">Gallery - <span id="galleryYear">2025</span></h3>
+      <div class="gallery-grid" id="galleryGrid"></div>
+      <div class="btn-center">
+        <button id="galleryToggle" class="btn btn-secondary">Show More</button>
+      </div>
+      <div class="btn-center" style="margin-top: 16px;">
+        <a href="assets/Brochure_2026.pdf" data-config-link="brochureUrl" class="btn btn-secondary" target="_blank">View
+          Brochure</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <img src="assets/images/footer_logo.webp" alt="ICFAC Logo" class="footer-logo" width="500" height="500">
+    <div class="footer-address">
+      Department of Chemistry, Mahatma Gandhi Central University, Motihari (East Champaran), Bihar, India
+    </div>
+    <div class="footer-credit">
+      &copy; 2026 ICFAC. Designed for the Department of Chemistry, MGCU.
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>

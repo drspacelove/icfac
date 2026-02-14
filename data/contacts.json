@@ -1,0 +1,41 @@
+{
+  "organizers": [
+    {
+      "name": "Prof. Sanjay Srivastava",
+      "role": "Chief Patron",
+      "title": "Hon'ble Vice-Chancellor",
+      "institution": "Mahatma Gandhi Central University",
+      "image": "assets/images/Prof. Sanjay Srivastava.webp"
+    },
+    {
+      "name": "Prof. (Dr.) Sunil Srivastava",
+      "role": "Patron",
+      "title": "Dean, School of Physical Sciences",
+      "institution": "Mahatma Gandhi Central University",
+      "location": "Motihari, Bihar",
+      "image": "assets/images/ Prof. (Dr.) Sunil Srivastava.webp"
+    },
+    {
+      "name": "Prof. (Dr.) Devdutt Chaturvedi",
+      "role": "Chairman & Convener",
+      "title": "Head, Dept. of Chemistry",
+      "subtitle": "Former Dean, School of Physical Sciences",
+      "institution": "Mahatma Gandhi Central University, Motihari, Bihar",
+      "email": "icfac2026@mgcub.ac.in",
+      "image": "assets/images/Prof. (Dr.) Devdutt Chaturvedi.webp"
+    },
+    {
+      "name": "Prof. (Dr.) Rafique Ul Islam",
+      "role": "Co-Convener",
+      "title": "Former Head, Dept. of Chemistry",
+      "institution": "Mahatma Gandhi Central University, Motihari",
+      "image": "assets/images/Prof. (Dr.) Rafique Ul Islam.webp"
+    }
+  ],
+  "venue": {
+    "name": "Mahatma Gandhi Central University",
+    "address": "Motihari (East Champaran), Bihar – 845401, India",
+    "email": "icfac2026@mgcub.ac.in",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.8234567890123!2d84.90577!3d26.64703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5a5a5a5a5a5d%3A0x5a5a5a5a5a5a5a5a!2sMahatma%20Gandhi%20Central%20University!5e0!3m2!1sen!2sin!4v1234567890"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "rows": [
+    {
+      "label": "Account Name",
+      "value": "Mahatma Gandhi Central University"
+    },
+    {
+      "label": "Account Number",
+      "value": "2314101031446"
+    },
+    {
+      "label": "Bank Name",
+      "value": "Canara Bank"
+    },
+    {
+      "label": "Branch",
+      "value": "Motihari"
+    },
+    {
+      "label": "IFSC Code",
+      "value": "CNRB0002314"
+    }
+  ]
+}
